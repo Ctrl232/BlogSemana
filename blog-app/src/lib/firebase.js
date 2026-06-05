@@ -1,12 +1,16 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
-const app = initializeApp({
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-})
+const firebaseConfig = {
+  apiKey: "AIzaSyAgOwmAWHySUWQ44Oqhlvy_WdMTxUfsCj4",
+  authDomain: "blogsemana.firebaseapp.com",
+  projectId: "blogsemana",
+  storageBucket: "blogsemana.firebasestorage.app",
+  messagingSenderId: "606928321759",
+  appId: "1:606928321759:web:fd59ae46154b4349283d6a",
+}
+
+const app = initializeApp(firebaseConfig)
 
 export const auth = getAuth(app)
 export const googleProvider = new GoogleAuthProvider()

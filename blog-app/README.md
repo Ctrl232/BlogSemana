@@ -1,16 +1,24 @@
-# React + Vite
+# Blog App — Technical Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Features
+- 📰 Listado de posts con paginación
+- 🏷️ Filtro por tags
+- 👤 Filtro por autor desde sidebar
+- 💬 Detalle de post con comentarios y reacciones
+- 🔐 Ruta protegida con Google Sign-In (Firebase)
+- 👥 Listado de usuarios con foto (solo autenticados)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+React 18 · Vite · React Router v6 · TanStack Query v5
+Zustand · Firebase Auth · Tailwind CSS
 
-## React Compiler
+## Run locally
+cp .env.example .env  # fill in Firebase credentials
+npm install && npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Architecture decisions
+- TanStack Query para cache y loading states sin Redux
+- Zustand con persist para mantener sesión al recargar
+- Routing por URL para el detalle del post (SEO-friendly)
+- API layer centralizado en /src/api para fácil testing

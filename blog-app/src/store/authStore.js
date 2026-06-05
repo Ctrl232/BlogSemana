@@ -8,6 +8,6 @@ export const useAuthStore = create(
       setUser: (user) => set({ user }),
       logout: () => set({ user: null }),
     }),
-    { name: 'auth-storage' }
+    { name: 'blog-auth' }
   )
 )
