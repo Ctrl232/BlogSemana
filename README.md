@@ -1,8 +1,5 @@
 # Blog SEMANA — Technical Test
 
-## 🔗 Demo en vivo
-https://TU-USUARIO.github.io/blog-app
-
 ## 🎨 UI Inspiration
 Diseño inspirado en la revista Semana Colombia.
 Paleta: Rojo #CC0000, Negro, Blanco — tipografía editorial.
