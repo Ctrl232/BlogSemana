@@ -1,5 +1,7 @@
 # Blog App — Technical Test
 
+![alt text]({45F9B9EA-F149-415B-A19E-B7CD1040E5FB}.png)
+
 
 ## Features
 - 📰 Listado de posts con paginación
